@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23ffffff' fill-opacity='0.02' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: #000;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .contenedor{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAVIGATION */
+
+.nav-main {
+    background: #FFF;
+    font-size: 24px;
+    display: flex;
+
+    align-items: center;
+    height: 80px;
+    padding: 20px 0;
+}
+
+.nav-brand {
+    width: 350px;
+
+}
+
+.nav-main ul{
+    display:flex;
+}
+
+.nav-main ul li{
+    padding: 15px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.contenedor-anuncio {
+    margin: auto;
+    width: 89%;
+}
+
+.contenedor-anuncio .slider {
+    display: flex;
+    background: #212121;
+    width: 76.575em;
+    height: 33.75em;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.contenedor-anuncio .slider img {
+    margin: 6px;
+}
+
+.contenedor-anuncio .control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: #fff;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.contenedor-anuncio .izquierda {
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, 50);
+
+}
+
+.contenedor-anuncio .derecha {
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, 50);
+
+}
