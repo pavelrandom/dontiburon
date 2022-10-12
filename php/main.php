@@ -15,6 +15,6 @@ $carta .= "De qué va su empresa/marca: $informacion \n";
 $carta .= "El formato que quiere del anuncio: $formato \n";
 
 mail($destinatorio, $asunto, $carta);
-header('Location:index.html')
+header('Location:sobre.html')
 
 ?>
