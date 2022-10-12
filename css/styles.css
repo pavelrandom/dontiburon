@@ -46,7 +46,6 @@ header .contenedor{
     display: flex;
 
     align-items: center;
-    height: 80px;
     padding: 20px 0;
 }
 
@@ -99,7 +98,7 @@ header .contenedor{
 }
 
 .contenedor-anuncio {
-    max-width: 100%;
+    
 }
 
 .contenedor-inicio .weather {
@@ -113,13 +112,15 @@ header .contenedor{
     display: flex;
     background: #212121;
     max-width: 76.50em;
-    height: 33.75em;
+    max-height: 33.75em;
     overflow: hidden;
     scroll-behavior: smooth;
 }
 
 .contenedor-anuncio .slider img {
     margin: 6px;
+    max-width: 99%;
+    max-height: 99%;
 }
 
 .contenedor-anuncio .control {
@@ -155,7 +156,6 @@ header .contenedor{
 }
 
 .contenedor .articulo{
-    width: 95%;
     border-color: #000;
     border-style: solid;
     padding-left: 20px;
@@ -177,6 +177,10 @@ header .contenedor{
     color: #414141
 }
 
+.articulo img {
+    max-width: 100%;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 800px) {
@@ -185,7 +189,7 @@ header .contenedor{
         font-size: 20px;
     }
 
-    header .nav-menu {
+    header .nav-main {
         flex-direction: column;
         text-align: center;
     }
