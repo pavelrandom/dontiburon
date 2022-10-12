@@ -10,7 +10,81 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>La página se está creando!<h1>
+<header>
+<nav class="nav-main">
+    <img src="img/logo.png" alt="logotipo" class="nav-brand">
+    <ul class="nav-menu">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        </style>
+        <hr>
+        <li>
+            <a href="index.html">Inicio</a>
+        </li>
+        <li>
+            <a href="revistas.html">Revistas</a>
+        </li>
+        <li>
+            <a href="sobre.html">Sobre nosotros</a>
+        </li>
+        <li>
+            <a href="contactos.html">Contactos</a>
+        </li>
+    </ul>
+    <div class="media">
+        <a class="fa fa-facebook-square"></a>
+        <a class="fa fa-instagram"></a>
+    </div>
+    <div class="lang">
+        <input type="image" src="img/idiomas/spanish.png" />
+        <input type="image" src="img/idiomas/russian.png" />
+        <input type="image" src="img/idiomas/english.png" />
+        <input type="image" src="img/idiomas/ukranian.png" />
+    </div>
+</nav>
+</header>
+<a class="weatherwidget-io" href="https://forecast7.com/es/39d47n0d38/valencia/" data-label_1="VALENCIA" data-label_2="TIEMPO:" data-theme="original" >VALENCIA TIEMPO:</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<div class="contenedor-inicio">
+    <div class="contenedor-anuncio">
+        <!-- <button role="button" class="control izquierda"><i class="fas fa-angle-left"></i></button> -->
+        <div class="slider">
+            <img src="img/banners/banner otoño 2022.png" alt>
+            <img src="img/banners/banner otoño 2022.png" alt>
+            <img src="img/banners/banner otoño 2022.png" alt>
+        </div>
+        <!-- <button role="button" class="control derecha"><i class="fas fa-angle-right"></i></button> -->
+    </div>
+</div>
+
+<div class="contenedor">
+    <div class="articulo">
+        <h1>¡NOVEDADES!:</h1>
+        <div class="enlaces">
+            <a href="www.google.com">Nuestras redes sociales</a>
+            <hr>
+        </div>
+    </div>
+</div>
+<form action="php/main.php" method="post" class="contenedor">
+    <div class="articulo">
+        <h1>¿Te gustaría que tu negocio sea publicitado en nuestra revista?</h1>
+        <a>¿Cómo se llama su empresa/marca?: </a> <input type="text" name="marca" required>
+        <hr>
+        <a>¿Cuál es su número de teléfono/correo electrónico? Es para poder contactar con usted: </a> <input type="text" name="contacto" required>
+        <hr>
+        <a>¿Que es lo que quiere publicitar, o de que va su empresa/marca?: </a> <input type="text" name="informacion" required>
+        <hr>
+        <a>¿En qué formato le gustaría que salga el anuncio?: </a><input type="text" name="formato" required>
+        <a class= "link" href="sobre.html">*Que formatos hay?</a>
+        <hr>
+        <button type="submit" class="btn btn-primary">Enviar </button>
+    </div>
+</form>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

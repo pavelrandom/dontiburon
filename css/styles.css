@@ -59,6 +59,33 @@ header .contenedor{
     display:flex;
 }
 
+.nav-main .lang{
+    margin-left: auto;
+}
+
+.nav-main .media{
+    margin: right;
+}
+
+.nav-main .media .fa-facebook-square {
+    color: blue;
+}
+
+.nav-main .media .fa-instagram{
+    background: -moz-linear-gradient(60deg, yellow, magenta);
+    background: -webkit-linear-gradient(60deg, yellow, magenta);
+    background: linear-gradient(60deg, yellow, magenta);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+.nav-main .lang input{
+    border-style: solid;
+}
+
 .nav-main ul li{
     padding: 15px;
 }
@@ -66,16 +93,26 @@ header .contenedor{
 .nav-main ul li a:hover {
     border-bottom: 2px solid #000;
 }
+.contenedor-inicio {
+    display: flex;
+    width: 100%;
+}
 
 .contenedor-anuncio {
-    margin: auto;
-    width: 89%;
+    max-width: 100%;
+}
+
+.contenedor-inicio .weather {
+    border-radius: 2px;
+    border-color: #000;
+    right: 50px;
+    width: 90%;
 }
 
 .contenedor-anuncio .slider {
     display: flex;
     background: #212121;
-    width: 76.575em;
+    max-width: 76.50em;
     height: 33.75em;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -110,4 +147,50 @@ header .contenedor{
     top: 50%;
     transform: translate(-50%, 50);
 
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+
+.contenedor .articulo{
+    width: 95%;
+    border-color: #000;
+    border-style: solid;
+    padding-left: 20px;
+    top: 5px;
+    border-width: 6px;
+}
+
+.contenedor .articulo input{
+    float: right;
+    width: 45%;
+}
+
+.contenedor .articulo .link {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+.contenedor .articulo a{
+    color: #414141
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 800px) {
+    header .logotipo {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    header .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor-anuncio {
+        font-size: 14px;
+    }
 }

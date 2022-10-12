@@ -16,17 +16,29 @@ const slider = document.querySelector('.slider')
 //    }
 //})
 
-let timeout = setTimeout(() => {
-    slider.scrollLeft += 1225;
-}, 2000);
+//timeout = setTimeout(() => {
+//    slider.scrollLeft += 1225;
+//}, 2000);
 
-let timeout1 = setTimeout(() => {
-    slider.scrollLeft += 1225;
-}, 4000);
 
-let timeout2 = setTimeout(() => {
-    slider.scrollLeft -= 3675;
-    clearTimeout(timeout);
-    clearTimeout(timeout1);
-    clearTimeout(timeout2);
-  }, 6000);
+//timeout1 = setTimeout(() => {
+//    slider.scrollLeft += 1225;
+//}, 4000);
+
+//timeout2 = setTimeout(() => {
+//    slider.scrollLeft -= 3675;
+//  }, 6000);
+
+//setInterval(() => {
+//    timeout = setTimeout(() => {
+//        slider.scrollLeft += 1225;
+//    }, 2000);
+    
+//    timeout1 = setTimeout(() => {
+//        slider.scrollLeft += 1225;
+//    }, 4000);
+   
+//    timeout2 = setTimeout(() => {
+//        slider.scrollLeft -= 3675;
+//      }, 6000);
+//}, 6000);
