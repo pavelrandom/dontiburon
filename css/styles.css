@@ -44,7 +44,6 @@ header .contenedor{
     background: #FFF;
     font-size: 24px;
     display: flex;
-
     align-items: center;
     padding: 20px 0;
 }
@@ -104,8 +103,7 @@ header .contenedor{
 .contenedor-inicio .weather {
     border-radius: 2px;
     border-color: #000;
-    right: 50px;
-    width: 90%;
+    width: 10%;
 }
 
 .contenedor-anuncio .slider {
@@ -191,6 +189,7 @@ header .contenedor{
 
     header .nav-main {
         flex-direction: column;
+        
         text-align: center;
     }
 
