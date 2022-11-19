@@ -152,8 +152,13 @@ header .contenedor{
     width: 100%;
     margin: auto;
 }
+.contenedor-flex{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
 
-.contenedor .articulo{
+.articulo{
     border-color: #000;
     border-style: solid;
     padding-left: 20px;
@@ -161,17 +166,26 @@ header .contenedor{
     border-width: 6px;
 }
 
-.contenedor .articulo input{
+.anuncios{
+    border-color: #000;
+    border-style: solid;
+    padding-left: 20px;
+    max-width: 25%;
+    top: 5px;
+    border-width: 2px;
+}
+
+.articulo input{
     float: right;
     width: 45%;
 }
 
-.contenedor .articulo .link {
+.articulo .link {
     color: blue;
     border-bottom: 1px solid blue;
 }
 
-.contenedor .articulo a{
+.articulo a{
     color: #414141
 }
 
@@ -197,5 +211,18 @@ header .contenedor{
 
     .contenedor-anuncio {
         font-size: 14px;
+    }
+    .contenedor-flex {
+        width: 100%;
+        margin: auto;
+        display: inline;
+    }
+    .anuncios{
+        border-color: #000;
+        border-style: solid;
+        padding-left: 20px;
+        max-width: 100%;
+        top: 5px;
+        border-width: 2px;
     }
 }
