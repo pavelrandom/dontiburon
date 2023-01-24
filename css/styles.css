@@ -158,6 +158,25 @@ header .contenedor{
     max-width: 100%;
 }
 
+.revistas {
+    display: flex;
+    border-color: #000;
+    border-style: solid;
+    border-width: 6px;
+    width: 100%;
+}
+
+.revista {
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
+    width: 24%;
+    box-shadow: 5px 5px 15px #414141;
+    text-align: center;
+}
+.revista img {
+    width: 95%;
+}
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 800px) {
@@ -198,5 +217,13 @@ header .contenedor{
     }
     .articulo{
         width: 100%;
+    }
+    .revista {
+        border-color: #000;
+        border-style: solid;
+        border-width: 2px;
+        width: 50%;
+        box-shadow: 5px 5px 15px #414141;
+        text-align: center;
     }
 }
