@@ -131,6 +131,10 @@ header .contenedor{
     width: 50%;
 }
 
+.articulo img{
+    margin: center;
+}
+
 .anuncios{
     border-color: #000;
     border-style: solid;
